@@ -1,0 +1,4 @@
+services:
+    mspy.elk_logger:
+        class: Mspy\ElkLoggerBundle\Logger\ElkLogger
+        arguments: ['%mspy_elk_logger.index%', '%mspy_elk_logger.hosts%', '%mspy_elk_logger.type%']
